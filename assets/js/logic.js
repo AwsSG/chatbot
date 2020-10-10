@@ -1,21 +1,26 @@
 $(document).ready(function () {
-  $(".choice").click(function () {
-    $(this).removeClass("choice").addClass("selected");
 
+
+  $(".chatbox").on('click',".choice" ,function () {
+    $(this).removeClass("choice").addClass("selected");
+    $(".choice").remove();
+    
     // fading out and removing the unselected choices(p elements)
-    $(".choice").fadeOut("fast", function () {
+    /* $(".choice").fadeOut("fast", function () {
       $(this).remove();
-    }); 
+    });  */ // will fix the style later
 
     // looping through answerList to find a key match, then loop through and append each value for the matching key 
-    for (let i = 0; i < Object.keys(answerList).length; i++) { 
-    if (Object.keys(answerList)[i] === $(".selected").text()) {
+    for (let question in answerList) {
+    if (question === $(".selected").text()) {
         for (let choiceCounter = 0; answerList[$(".selected").text()].length > choiceCounter; choiceCounter ++) {
-            $(".chatbox").append('<p class="question">'+answerList[$(".selected").text()][choiceCounter]+'</p>');
+            $(".chatbox").append('<p class="choice">'+answerList[question][choiceCounter]+'</p>');
+            };
         };
     };
-    };
-        
+    
+    $(this).removeClass("selected").addClass("history");
+
   });
 
 
