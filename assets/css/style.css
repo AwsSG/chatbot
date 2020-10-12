@@ -1,7 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto+Condensed:wght@300;400&display=swap");
 
-p {
+/* color theme: #7e57c2 */
+
+.themed-bg {
+    background-color: #7e57c2
+}
+
+h1 {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    font-family: "Roboto+Condensed", sans-serif;
+}
+
+h5, p {
   font-family: "Montserrat", sans-serif;
+  margin: 0.4em;
+}
+
+img {
+    margin-bottom: 0.2em;
 }
 
 .choice {
@@ -9,7 +26,6 @@ p {
   padding: 12px;
   border: 1px solid black;
   border-radius: 8px;
-  margin: 0px 2px;
   cursor: pointer;
 }
 
@@ -19,5 +35,15 @@ p {
   padding: 12px;
   border: 1px solid black;
   border-radius: 0px 8px 8px 8px;
-  background-color: #7dbce3;
+  background-color: #fff9c4;
+}
+
+#restoreAll {
+    font-family: "Roboto+Condensed", sans-serif;
+    font-weight: 300;
+    color: #fff;
+    margin: 12px 5px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    display: block;
 }
