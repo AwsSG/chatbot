@@ -18,11 +18,11 @@ var reset = $(".chatbox").html();
 
             if (answerList[question].length > 1){ //this if statement is to check if the answer is the last answer (no followup question comes after)
                 for (let choiceCounter = 0; answerList[selectedValue].length > choiceCounter; choiceCounter++) { //loop to add each one of the followup  questions
-                    $(".chatbox").append($('<p class="choice">'+answerList[question][choiceCounter]+'</p>').hide().fadeIn("fast")); //append new html element with fadeIn effect
+                    $(".chatbox").append($('<p class="choice">'+answerList[question][choiceCounter]+'</p><br>').hide().fadeIn("fast")); //append new html element with fadeIn effect
                     
                 }
             } else { // in the case that it is the last answer
-                $(".chatbox").append($('<p class="lastAnswer">'+answerList[question]+'</p>').hide().fadeIn("fast"));
+                $(".chatbox").append($('<p class="lastAnswer">'+answerList[question]+'</p><br>').hide().fadeIn("fast"));
             };
         };
     };
