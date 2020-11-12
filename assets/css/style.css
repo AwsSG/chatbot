@@ -22,6 +22,8 @@ img {
   margin-bottom: 0.2em;
 }
 
+.question,
+.lastAnswer,
 .choice,
 .unselected,
 .history {
@@ -30,6 +32,13 @@ img {
   border: 1px solid black;
   border-radius: 14px;
   margin-left: 2px;
+}
+
+.question,
+.lastAnswer {
+  border-radius: 0px 14px 14px 14px;
+  color: #fafafa;
+  background-color: #7e57c2;
 }
 
 .choice {
@@ -41,9 +50,9 @@ img {
 }
 
 .history {
-  border-radius: 0px 14px 14px 14px;
+  border-radius: 14px 0px 14px 14px;
   color: #fafafa;
-  background-color: #7e57c2;
+  background-color: #555555;
 }
 
 #restoreAll {
