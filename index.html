@@ -18,7 +18,6 @@
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
       crossorigin="anonymous"
     ></script>
-    
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
@@ -28,7 +27,7 @@
   <body>
     <header class="themed-bg">
       <h1 class="text-center text-light">
-        Welcome to Chat Bot
+        Welcome to ChatBot page
       </h1>
     </header>
     <section>
@@ -36,27 +35,66 @@
         <div class="row">
           <div class="chat-area">
             <h5>
-              <img src="assets/img/boticonm.png" alt="bot icon" /><br/>
-              Hi, my name is Walli and I am a chatBot. I will help answer your
-              questions or direct you to where you can find it.
+              <img src="assets/img/boticonm.png" alt="bot icon" /><br />
+              Hi, my name is Walli and I am a chatBot. I will answer your
+              questions based on my programming. If I don't know the answer to your question, I will direct you to where you can get an asnwer.
             </h5>
             <div class="chatbox">
               <p class="question">What would you like help with today?</p>
-              <div class="d-flex flex-row-reverse"><p class="choice">I need help with my bill</p></div>
-              <div class="d-flex flex-row-reverse"><p class="choice">I have a technical problem</p></div>
-              <div class="d-flex flex-row-reverse"><p class="choice">I have a question about a product I am interested in</p></div>
+              <div class="d-flex flex-row-reverse">
+                <p class="choice">I need help with my bill</p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <p class="choice">I have a technical problem</p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <p class="choice">I have a question about a product I am interested in</p>
+              </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3 offset-md-6">
-            <button id="restoreAll" class="themed-bg">Start over</button>
+          <div class="mx-auto">
+            <button id="restoreAll" class="themed-bg">Reset / Ask again</button>
           </div>
         </div>
       </div>
     </section>
-    <footer></footer>
+    <footer class="themed-bg">
+      <div class="container">
+        <div class="row">
+          <div class="mx-auto">
+            <h5 class="text-center text-light">
+              If you want to adapt this ChatBot, feel free to contact me on
+              social media:
+            </h5>
+            <ul class="list-inline social-links text-center">
+              <li class="list-inline-item">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  aria-hidden="true"
+                >
+                  <i class="fab fa-facebook" aria-hidden="true"></i>
+                  <span class="sr-only">Facebook</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  aria-hidden="true"
+                >
+                  <i class="fab fa-linkedin" aria-hidden="true"></i>
+                  <span class="sr-only">LinkedIn</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
-    <script type="text/javascript" src="assets/js/answers.js"></script>
-    <script type="text/javascript" src="assets/js/logic.js"></script>
+  <script type="text/javascript" src="assets/js/answers.js"></script>
+  <script type="text/javascript" src="assets/js/logic.js"></script>
 </html>
