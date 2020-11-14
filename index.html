@@ -34,8 +34,15 @@
       <div class="container">
         <div class="row">
           <div class="chat-area">
-            <h5>
-              <img src="assets/img/boticonm.png" alt="bot icon" /><span class="greeting">Hello!</span><br>I am Walli, I will answer your questions based on my programming. If I don't know the answer to your question, I will direct you to where you can get an asnwer.</h5>
+            <div class="intro d-flex flex-row">
+                <img src="assets/img/boticonm.png" alt="bot icon" />
+                <div class="greeting d-flex flex-column">
+                    <h5 id="greetingh" class="hidden">Hello!</h5>
+                    <h5 id="greetingw" class="hidden">I am Walli</h5>
+                </div>
+            </div>
+            <h5 class="intro-text hidden">I will answer your questions based on my programming. If I don't know the answer to your question, I will direct you to where you can get an answer.</h5>
+            <div class="slide-down-container hidden">
             <div class="chatbox">
             <p class="bot-icon"></p>
               <p class="question">What would you like help with today?</p>
@@ -51,14 +58,17 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="mx-auto">
-            <button id="restoreAll" class="themed-bg">Reset / Ask again</button>
+        <div class="container">
+          <div class="row">
+        <div class="col-md-5"></div>
+           <div class="col-md-2"><button id="restoreAll" class="hidden">Start over</button></div>
+        <div class="col-md-5"></div>
           </div>
         </div>
       </div>
+      </div>
     </section>
-    <footer class="themed-bg">
+    <footer class="themed-bg hidden">
       <div class="container">
         <div class="row">
           <div class="mx-auto centering">

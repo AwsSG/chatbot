@@ -13,26 +13,30 @@ h5 {
   font-family: "Roboto+Condensed", sans-serif;
 }
 
-.greeting {
-    margin-left: 22px;
-}
-
 h5,
 p {
   font-family: "Montserrat", sans-serif;
   margin: 0.3rem;
 }
 
-h5 {
-  display: inline-block;
-}
-
-img {
-  margin-bottom: 0.2em;
-  display: inline-block;
-}
-
 /*----------------------------------- chat area styling */
+.greeting {
+  margin-top: 40px;
+  margin-left: 25px;
+}
+
+.greeting h5 {
+  margin: 0px;
+  padding: 0px;
+}
+
+#greetingh {
+  border-bottom: 8px solid white;
+}
+
+.intro img {
+  margin-bottom: 0.2em;
+}
 
 .bot-icon {
   background: url("../img/boticons.png");
@@ -83,6 +87,11 @@ img {
   color: #fafafa;
   background-color: #555555;
 }
+/*------------------------------ setting fadeIn/slideDown effect */
+
+.hidden {
+display: none;
+}
 
 /*------------------------------ reset button */
 
@@ -90,15 +99,19 @@ img {
   font-family: "Roboto+Condensed", sans-serif;
   font-weight: 300;
   color: #fafafa;
+  background-color: #1c1130;
   margin: 12px 5px;
   padding: 4px 8px;
   border-radius: 8px;
-  display: block;
 }
 
 /*------------------------------------ footer */
 .padding {
   padding: 10px;
+}
+
+footer h5 {
+  display: inline-block;
 }
 
 .centering {

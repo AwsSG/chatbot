@@ -1,8 +1,22 @@
 
 $(document).ready(function () {
 
+// delayed slideDown effect on page load
+$('#greetingh').delay(1000).slideDown();
+
+$('#greetingw').delay(3000).slideDown();
+
+$('.intro-text').delay(5000).slideDown();
+
+$('.slide-down-container').delay(7500).slideDown();
+
+$('#restoreAll').delay(7600).slideDown()
+
+$('footer').delay(7700).slideDown();
+
 var reset = $(".chatbox").html();
 
+// click event handler
   $(".chatbox").on('click',".choice" ,function () {
     $(this).removeClass("choice").addClass("selected");
 
