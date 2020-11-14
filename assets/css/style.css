@@ -13,21 +13,43 @@ h5 {
   font-family: "Roboto+Condensed", sans-serif;
 }
 
+.greeting {
+    margin-left: 22px;
+}
+
 h5,
 p {
   font-family: "Montserrat", sans-serif;
-  margin: 0.4em;
+  margin: 0.3rem;
 }
 
 h5 {
-    display: inline-block;
+  display: inline-block;
 }
 
 img {
   margin-bottom: 0.2em;
+  display: inline-block;
 }
 
 /*----------------------------------- chat area styling */
+
+.bot-icon {
+  background: url("../img/boticons.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.person-icon {
+  display: block;
+  background: url("../img/personicons.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  width: 30px;
+  height: 30px;
+}
 
 .question,
 .lastAnswer,
@@ -75,9 +97,15 @@ img {
 }
 
 /*------------------------------------ footer */
+.padding {
+  padding: 10px;
+}
 
+.centering {
+  text-align: center;
+}
 .social-links {
-    display: inline-block;
+  display: inline-block;
 }
 
 .social-links li a i {
@@ -88,11 +116,11 @@ img {
 }
 
 .social-links li a i:hover {
-  color: #4267B2;
+  color: #4267b2;
 }
 
 .social-links li {
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 0.5rem 0;
 }
 
 .social-links li a i {
