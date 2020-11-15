@@ -57,8 +57,4 @@ var reset = $(".chatbox").html();
       $(".chatbox").html(reset);
   })
 
-
 });
-
-// souce for fading out and removing elements:
-//https://stackoverflow.com/questions/553402/how-to-fadeout-remove-a-div-in-jquery 

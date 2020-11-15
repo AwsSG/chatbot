@@ -6,10 +6,17 @@
 }
 
 /*------------------------------- general styling (h/p/img) */
+.uppercase {
+  text-transform: uppercase;
+}
+
 h1,
 h5 {
   padding-top: 1em;
   padding-bottom: 0.5em;
+}
+
+h1 {
   font-family: "Roboto+Condensed", sans-serif;
 }
 
@@ -90,7 +97,7 @@ p {
 /*------------------------------ setting fadeIn/slideDown effect */
 
 .hidden {
-display: none;
+  display: none;
 }
 
 /*------------------------------ reset button */
