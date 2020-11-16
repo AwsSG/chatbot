@@ -1,7 +1,7 @@
 
 $(document).ready(function () {
 
-// delayed slideDown effect on page load
+// delayed slideDown effect on page load (values are in milliseconds, can be edited to have desired duration)
 $('#greetingh').delay(1000).slideDown();
 
 $('#greetingw').delay(3000).slideDown();
@@ -14,6 +14,7 @@ $('#restoreAll').delay(7600).slideDown()
 
 $('footer').delay(7700).slideDown();
 
+// initial contents of chatbox before user interaction, to be called on reset
 var reset = $(".chatbox").html();
 
 // click event handler
@@ -27,16 +28,16 @@ var reset = $(".chatbox").html();
     // looping through answerList to find a key match, then loop through and append each value for the matching key 
     for (let question in answerList) {
         if (question == selectedValue) {
-            if (questionsList[question] !== undefined){$(".chatbox").append('<p class="bot-icon"></p><p class="question">'+questionsList[question]+'</p>');}; //if there is a qustion in the question list for the selected text, then append the question.
+            if (questionsList[question] !== undefined){$(".chatbox").append($('<p class="bot-icon"></p><p class="question">'+questionsList[question]+'</p>').hide().fadeIn("fast"));}; //if there is a qustion in the question list for the selected text, then append the question.
     
 
             if (answerList[question].length > 1){ //this if statement is to check that the answer is NOT the last answer (followup question comes after)
                 for (let choiceCounter = 0; answerList[selectedValue].length > choiceCounter; choiceCounter++) { //loop to add each one of the followup  questions
-                    $(".chatbox").append($('<div class="d-flex flex-row-reverse"><p class="choice">'+answerList[question][choiceCounter]+'</p></div>').hide().fadeIn("fast")); //append new html element with fadeIn effect
+                    $(".chatbox").append($('<div class="d-flex flex-row-reverse"><p class="choice">'+answerList[question][choiceCounter]+'</p></div>').hide().fadeIn("slow")); //append new html element with fadeIn effect
                     
                 }
             } else { // in the case that it is the last answer
-                $(".chatbox").append($('<p class="bot-icon"><p class="lastAnswer">'+answerList[question]+'</p>').hide().fadeIn("fast"));
+                $(".chatbox").append($('<p class="bot-icon"><p class="lastAnswer">'+answerList[question]+'</p>').hide().fadeIn("slow"));
             };
         };
     };
@@ -52,7 +53,7 @@ var reset = $(".chatbox").html();
                 }, 2000); 
 
   });
-
+// reset button
   $("#restoreAll").click(function(){
       $(".chatbox").html(reset);
   })

@@ -47,15 +47,14 @@ p {
 
 .bot-icon {
   background: url("../img/boticons.png");
-  background-repeat: no-repeat;
-  background-size: 30px;
-  width: 30px;
-  height: 30px;
 }
 
 .person-icon {
-  display: block;
   background: url("../img/personicons.png");
+}
+
+.bot-icon,
+.person-icon {
   background-repeat: no-repeat;
   background-size: 30px;
   width: 30px;
@@ -94,7 +93,7 @@ p {
   color: #fafafa;
   background-color: #555555;
 }
-/*------------------------------ setting fadeIn/slideDown effect */
+/*------------------------------ setting the slideDown effect */
 
 .hidden {
   display: none;

@@ -1,3 +1,6 @@
+// answerList contains all the choices that are available to the user, can be modified or expended as much as needed.
+// just follow this simple rule: each value is key to one or more values, wich are the follow up choices or final answer (not follow up choices)     
+// a key that has only one value = final answer (no follow up question or choices)
     var answerList = {
         "I need help with my bill": ["My bill amount is incorrect", "My bill did not arrive yet"],
             "My bill amount is incorrect": ["Higher than expected","Lower than expected"],
@@ -20,6 +23,8 @@
         "I have a question about a product I am interested in": ["You can talk to one of our sales agents on 0002 between 09:00 and 17:00 from Monday to Friday."]
     };
 
+// the questionList contains lines that the bot will say in response to a user's clicking on a choice, before giving the user the next available choices
+// this can be modified as well, but the keys has to come from (match) the keys in answerList that has multiple values (not final answer).
    var questionsList = {
         "I need help with my bill": "Ok, how can I help you with your bill?",
             "My bill amount is incorrect":"Alright, is your bill higher or lower than what you expected?",

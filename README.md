@@ -2,7 +2,7 @@
 
 MS2 GitHub project page [here](https://github.com/AwsSG/chatbot)
 
-This is a one page chatbot website used to answer all customers questions that does not require human interaction. The design of this website was inspired by a business need in my work in customer care at a telecommunication company. The site offers multiple branches of pre-programmed answers depending on what the user selects, each selected choice leads to either an answer (end of the branch) or another question to narrow down the usre's (customer) issue. At any point, the user can press the "start over" button to reset to the initial choices and start again.
+This is a one page chatbot website used to answer all customers questions that does not require human interaction (answers that can be automated). The design of this website was inspired by a business need in my work in customer care at a telecommunication company. The site offers multiple branches of pre-programmed answers depending on what the user selects, each selected choice leads to either an answer (end of the branch) or another question to narrow down the usre's (customer) issue. At any point, the user can press the "start over" button to reset to the initial choices and start again. The current branches of questions and answers are just a sample, which can be scaled (expanded) by editing the variables containing the questions and answers.
 
 ## User Experience (UX)
 
@@ -109,8 +109,19 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   The Website was tested on browsers (Google Chrome, Internet Explorer, Microsoft Edge browsers) and it worked properly.
 -   The website was viewed on a variety of devices (Desktop, Laptop, Big LG screen, iPhone 8 & iPhone5/SE) and the responsiveness was woring properly.
--   Testing was done to ensure that the social links are liked correctly.
+-   Testing was done to ensure that all available (clickable) choices for the user as well as the reset button are working properly and the social links are liked correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues. non were found.
+-   Tested the site using Chrome Lighthouse (for both desktop and mobile) and below are the scores:
+    -   Mobile
+        -   Performance: 85
+        -   Accessibility: 96
+        -   Best Practices: 93
+        -   SEO: 92
+    -   Desktop
+        -   Performance: 94
+        -   Accessibility: 96
+        -   Best Practices: 100
+        -   SEO: 90
 
 ### Known Bugs
 
@@ -144,8 +155,8 @@ The project was deployed to GitHub Pages using the steps in the CI video (GitHub
 
 ### Acknowledgements
 
--   My Mentor for continuous helpful feedback.
-
 -   Tutor support at Code Institute for their support.
 
 -   CI slack comunity for quick answers to short questions
+
+-   My Mentor for continuous helpful feedback.

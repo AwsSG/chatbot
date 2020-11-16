@@ -21,28 +21,38 @@
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
+    <script type="text/javascript" src="assets/js/answers.js"></script>
+    <script type="text/javascript" src="assets/js/logic.js"></script>
+
     <title>Chat Bot!</title>
   </head>
-
+  <!-- header area -->
   <body>
     <header class="themed-bg">
       <h1 class="text-center text-light uppercase">
         Welcome to chatbot page
       </h1>
     </header>
+    <!-- Main body -->
     <section class="padding">
       <div class="container">
         <div class="row">
+        <!-- The main area of the chatbot -->
           <div class="chat-area">
+          <!-- Bot image and intro -->
             <div class="intro d-flex flex-row">
-                <img src="assets/img/boticonm.png" alt="bot icon" />
+                <img src="assets/img/boticonm.png" alt="bot icon" /> <!-- source of the image:https://icons8.com/ -->
+                <!-- Greating -->
                 <div class="greeting d-flex flex-column">
                     <h5 id="greetingh" class="hidden uppercase">Hello!</h5>
                     <h5 id="greetingw" class="hidden">I am Walli</h5>
                 </div>
             </div>
+            <!-- Intro text -->
             <h5 class="intro-text hidden">I will answer your questions based on my programming. If I don't know the answer to your question, I will direct you to where you can get an answer.</h5>
             <div class="slide-down-container hidden">
+            <!-- The chat box, where speech bubles appear -->
+            <!-- Question class = bot / choice class = user (to choose from) -->
             <div class="chatbox">
             <p class="bot-icon"></p>
               <p class="question">What would you like help with today?</p>
@@ -58,6 +68,7 @@
             </div>
           </div>
         </div>
+        <!-- Reset button -->
         <div class="container">
           <div class="row">
         <div class="col-md-5"></div>
@@ -68,6 +79,7 @@
       </div>
       </div>
     </section>
+    <!-- Footer area -->
     <footer class="themed-bg hidden">
       <div class="container">
         <div class="row">
@@ -78,6 +90,7 @@
             <ul class="list-inline social-links">
               <li class="list-inline-item">
                 <a
+                  rel="noopener"
                   href="https://www.facebook.com/"
                   target="_blank"
                   aria-hidden="true"
@@ -88,6 +101,7 @@
               </li>
               <li class="list-inline-item">
                 <a
+                  rel="noopener"
                   href="https://linkedin.com/"
                   target="_blank"
                   aria-hidden="true"
@@ -102,6 +116,4 @@
       </div>
     </footer>
   </body>
-  <script type="text/javascript" src="assets/js/answers.js"></script>
-  <script type="text/javascript" src="assets/js/logic.js"></script>
 </html>
