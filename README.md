@@ -1,6 +1,6 @@
 # Chatbot with pre-programmed answers
 
-MS2 GitHub project page [here](https://github.com/AwsSG/chatbot)
+ChatBot GitHub project page [here](https://github.com/AwsSG/chatbot)
 
 This is a one page chatbot website used to answer all customers questions that does not require human interaction (answers that can be automated). The design of this website was inspired by a business need in my work in customer care at a telecommunication company. The site offers multiple branches of pre-programmed answers depending on what the user selects, each selected choice leads to either an answer (end of the branch) or another question to narrow down the usre's (customer) issue. At any point, the user can press the "start over" button to reset to the initial choices and start again. The current branches of questions and answers are just a sample, which can be scaled (expanded) by editing the variables containing the questions and answers.
 
@@ -72,6 +72,8 @@ This is a one page chatbot website used to answer all customers questions that d
     - Balsamiq was used to create the wireframes during the design process.
 8. [icons8:](https://icons8.com/)
     - icons8 library was used to get the Robot image.
+9. [w3schools](https://www.w3schools.com/)
+    - w3schools was used regularly for reference on HTML, CSS, JavaScript, JQuery.
 
 ## Testing
 
@@ -82,7 +84,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Testing User Stories from User Experience (UX) Section
 
--   #### Recruiters
+-   #### Customers
 
     1. As a customer, I want to go to one place where I can get answers about the issue I am facing
 
