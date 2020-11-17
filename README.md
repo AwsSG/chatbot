@@ -1,6 +1,6 @@
 # Chatbot with pre-programmed answers
 
-ChatBot GitHub project page [here](https://github.com/AwsSG/chatbot)
+ChatBot project live page [here](https://awssg.github.io/chatbot/)
 
 This is a one page chatbot website used to answer all customers questions that does not require human interaction (answers that can be automated). The design of this website was inspired by a business need in my work in customer care at a telecommunication company. The site offers multiple branches of pre-programmed answers depending on what the user selects, each selected choice leads to either an answer (end of the branch) or another question to narrow down the usre's (customer) issue. At any point, the user can press the "start over" button to reset to the initial choices and start again. The current branches of questions and answers are just a sample, which can be scaled (expanded) by editing the variables containing the questions and answers.
 
@@ -136,7 +136,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 The project was deployed to GitHub Pages using the steps in the CI video (GitHub Pages) as follows...
 
-1. Log in to GitHub and locate the [GitHub chatbot Repository](https://awssg.github.io/chatbot/)
+1. Log in to GitHub and locate the [GitHub chatbot Repository](https://github.com/AwsSG/chatbot)
 2. Go to the "Settings" tab and scroll down to GitHub Pages.
 3. Under the "source" Select the "master branch" and click "save".
 4. Scrol down on the next page to GitHub Pages and find the live link to the project.
